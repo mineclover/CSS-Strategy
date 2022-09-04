@@ -1,0 +1,53 @@
+header {
+  width: 100vw;
+}
+
+div{
+text-align: center;
+width: 100px auto;
+height: 100px auto;
+padding: 1em;
+margin-bottom: 1em;
+background-color: rgb(224, 229, 236);
+box-shadow: #a3b1c680 0.5em 0.5em 1em 0, rgb(255, 255, 255) -0.5em -0.5em 1em 0;
+border-radius: 0.5em;
+}
+/* 깔끔한 정렬을 위한 노력 */
+div:last-child{
+  margin-bottom: 0;
+}
+
+
+section > div {
+  margin: 1em; 
+}
+
+section {
+  outline: 1px dotted #000;
+  outline-offset: 2px;
+}
+
+main {
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  height: 100vh;
+}
+/* flex */
+
+.flex {
+  display: flex;
+  width: 20vw;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+copy:hover {
+  outline: 1px #f00 solid;
+  background-color: antiquewhite;
+}
+copy 
