@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper > * {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+.header {
+  background-color: pink;
+}
+.main {
+  height: 160px;
+  overflow: hidden;
+}
+.aside-1 {
+  background-color: orange;
+}
+.aside-2 {
+  background-color: lightblue;
+}
+.footer {
+  background-color: lime;
+}
+
+@media all and (min-width: 860px) {
+  .main, .aside-1, .aside-2 { flex-grow: 1; flex-basis: 0; }
+  .aside-1, .aside-2 { max-width: 240px;}
+  
+  .heaer   { order: 1; }
+  .aside-1 { order: 2; }
+  .main    { order: 3; }
+  .aside-2 { order: 4; }
+  .footer  { order: 5; }
+}

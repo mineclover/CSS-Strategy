@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="/style.css">
+  
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div>
+      <p>
+        부모(parent)는 자식(child)을 배치한다
+        <br>
+        자식은 부모의 크기에 간섭한다
+        <br>
+        부모는 자신의 크기에 대한 설정을 할 수 있다
+        <br>
+        자식끼리는 동등한 관계를 가진다
+        <br>
+        자기 자신을 정렬로 조절 할 수 없다 ( 자신과 동등한 다른 요소를 제어하지 못하기 때문 )
+        <br>
+        제어는 무조건 하향식이다
+        <br>
+        본인의 포지션 제어는 같은 레벨에서 가능하다 (postion과 top,left,rihgt,bottom)
+      </p>
+
+    </div>
+
+  </header>
+  <div>부모가 자식의 크기를 가져오긴 하지만 설정한 크기를 벗어나는 것을 제어하지는 못한다 오버플로우 히든으로 가려지지 않는다
+    <br>기본적으로 아래에 써진 것이 더 위에 렌더링된다 임의로 조작하기 위해서는 z-index를 사용한다
+  </div>
+
+  
+  <div></div>
+  <main>
+  <section>
+    <p>Default인 block의 정렬</p>
+    <div class="block">
+      <div>블럭은 기본적으로 부모가 할당한</div>
+      <div>영역에서의 한 줄을 전부 사용한다</div>
+      <div>크기가 정해져있지 않으면 꽉차고 아니면 줄 바꿈 된다</div>
+      <div>본인의 속성을 변경할 수 있기 때문에<br>display에 따라 결과가 달라질 수 있다</div>
+    </div>
+    
+    <div class="new">깔끔하게 정렬 할 때는 :last-child을 잘 활용한다</div>
+    <div class="new"><a>어쩔저쩔</a></div>
+  </section>
+  <section>
+    <p>flex의 정렬</p>
+    <div class="flex">
+      <p>플랙스는 빈 공간을 자동으로 채워주는 기능이 있는 걸로 알려져있다</p>
+      <p>그런데 영역의 크기가 정해져있지 않으면 자동으로 맞춰지지 않는다 고로 분리된 시스템에서 플랙스 노드의 크기를 관리해줘야한다</p>
+      <p>대부분 이걸 .wrapper 또는 .container 로 이름 짓는다 다른 display도 동일하게 적용함</p>
+      <p>gap을 사용할 수 잇다 <br> 갭은 자식 노드에 적용됨</p>
+      <span>크기나 종류의 제한이 없이 다른 노드라면 다 적용됨</span>
+      <div>요소도 다 flex로 취급받음</div>
+      <div></div>
+      <div></div>
+      
+      <div> 모든 요소들이 부모 flex 설정에 영향을 받기 때문에 크기 설정을 잘해둬야 좋다</div>
+      <div class="ex-01">vw 같은 걸 쓰면 좀 더 재밌을듯</div>
+      <div>flex-basis를 통해서 정확하게 플랙스 영역에 맞는 컨텐츠를 넣을 수 있다만 쓰고자 한다면 padding, gap, margin을 쓰지 않아야한다</div>
+      <div class="ex-03">코드 상 중간에 있는 내용을 관통해 정렬되지 않는다만 order 를 통해 변경 될 수 있다</div>
+      <div class="ex-02"><a href="https://jeonghwan-kim.github.io/dev/2020/03/09/flex.html">flex grow, shrink, basis, order 설명된 블로그</a></div>
+      <div>정의되지 않은 flex 자식 요소들은 order 보다 상위에 존재한다</div>
+
+      <div>이를 위한 좋은 방법은 align을 사용하는 것이다</div>
+      <div><a href="https://heinafantasy.com/80">align 속성 정리 잘된</a></div>
+    </div>
+  </section>
+  <main>
+
+  
+</body>
+</html>
