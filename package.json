@@ -1,0 +1,20 @@
+{
+  "name": "css-strategy",
+  "version": "1.0.0",
+  "description": "`/git open source control view` 로 git 컨트롤 바 활성화 `<ifream>`  으로 코드 임베드",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mineclover/CSS-Strategy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mineclover/CSS-Strategy/issues"
+  },
+  "homepage": "https://github.com/mineclover/CSS-Strategy#readme"
+}
