@@ -8,6 +8,23 @@
 
 보다 나은 데이터 구조화 방식을 만들었을 때 이식하기 편하도록 직관적이게 구성하는 방향성으로
 
+## 그런 작업을 위해 MD와 기타등등을 분리함
+
+`ctrl+p` 하고 `>` 로 들어가지는 명령창에 `setting` 을 입력하거나
+.vscode 에 seetings.json에 아래 내용이 저장하거나
+```JSON
+{
+  "files.exclude": {
+    "*.md": true
+  }
+}
+```
+
+설정창에 `files.exclude` 를 검색하고 설정을 바꾸거나
+
+
+
+
 ## 공부에 도움되는 사이트
 
 https://ko.javascript.info/

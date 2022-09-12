@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+< lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <script src="Copybutton.js"></script>
+  <title>Document</title>
+</head>
+<>
+  <ion-header>
+    <ion-navbar>
+      <ion-title>Copy Button</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>복사하기</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <div id="container">
+          <p>내용</p>
+        </div>
+        <button ion-button block (click)="CopyToClipboard('container')">복사하기</button>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</body>
+</html>
